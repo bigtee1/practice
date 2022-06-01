@@ -1,0 +1,57 @@
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.grid-container{
+    width: 90%;
+    max-width: 1200px;
+    border: 2px solid black; 
+    margin: 0 auto;
+    display: grid;
+}
+.our-team{
+    background: #0b2027;
+    padding: 5em, 0;
+    color: white;
+}
+.team-des{
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 5em;
+    font-weight: bold;
+    color: white;
+}
+span{
+    display: block;
+    font-weight: bold;
+    font-weight: 20em;
+}
+
+.team-member{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+img{
+    width: 100%;
+}
+figcaption{
+   position: absolute;
+    top: 1em;
+    bottom: 1em;
+    right: ;
+    left: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    op
+}**/
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regular calculator</title>
+        <link rel="stylesheet" href="assets/css/exam.css">
+        <script></script>
+        <style>
+            body{
+                background: gray;
+            }
+            .form-container{
+                background-color: #fff;
+                margin: 40px auto 40px auto;
+                padding: 20px 20px;
+                max-width: 700px;
+            }
+            .form-row{
+                padding: 10px 0;
+                display: flex;
+            }
+            .form-row label{
+                padding-right: 10px;
+            }
+            .form-row input{
+                flex: 1;
+            }
+            .column-layout{
+                background: #fff;
+                padding: 30px 30px;
+                margin: 0 auto;
+                line-height: 1.65;
+                max-width: 1300px;
+                display: flex;
+            }
+            .main-column{
+                flex: 2;
+                order: 2;
+            }
+            .sidebar-one{
+                flex: 1;
+                order: 1;
+            }
+            .sidebar-two{
+                flex: 1;
+                order: 3;
+            }
+            .call-outs-container{
+                max-width: 1400px;
+                margin: 40px auto 40px auto;
+                
+            }
+            .call-out{
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                padding: 20px;
+                flex-basis: 30%;
+            }
+            .call-out:nth-child(1) {background-color: lightblue;}
+            .call-out:nth-child(2) {background-color: rgb(127, 238, 154);}
+            .call-out:nth-child(3) {background-color: rgb(226, 148, 207);}
+
+        .box-container{
+            max-width: 1400px;
+            margin: 40px auto 0 auto;
+            background-color: #fff;
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .fixed-sized{
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+       @media (min-width: 900px) {
+                .call-outs-container{
+                display: flex;
+                justify-content: space-between;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <form action="">
+                <div class="form-row">
+                    <label for="">Name:</label>
+                    <input type="text">
+                </div> 
+                <div class="form-row">
+                    <label for="">surname:</label>
+                    <input type="text">
+                </div>
+            </form>
+        </div>
+        <div class="column-layout">
+            <div class="main-column">
+                <h3>main  column</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum pariatur, quas tempora ipsa rerum magni perspiciatis incidunt aut ut repellat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus velit, esse accusantium quaerat nisi corrupti ab! Odio, autem consectetur!</p>
+            </div>
+            <div class="sidebar-one">
+                <h3>sidebar one</h3>                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cumque?</p>
+            </div>
+            <div class="sidebar-two">
+                <h3>sidebar two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam.</p>
+            </div>
+        </div>
+        <div class="call-outs-container">
+            <div class="call-out">
+                <h4>feature 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus reprehenderit error cum voluptate mollitia rem pariatur incidunt facere iure a.</p>
+            </div>
+            <div class="call-out">
+                <h4>feature 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque, esse perferendis voluptas molestiae corporis cumque possimus! Error, aliquid animi.</p>
+            </div>
+            <div class="call-out">
+                <h4>feature 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rerum perspiciatis nulla dolorum earum accusamus ut doloremque placeat amet recusandae. </p>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="fixed-sized">
+                1
+            </div>
+            <div class="fixed-sized">
+                2
+            </div>
+            <div class="fixed-sized">
+                3
+            </div>
+            <div class="fixed-sized">
+                4
+            </div>
+            <div class="fixed-sized">
+                5
+            </div>
+        </div>
+        <!--<section class="our-team">
+            <div class="grid-container">
+                <div class="team-des">
+                    <h1 class="team-title">our <span>Team</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem vero exercitationem pariatur necessitatibus iure omnis dicta reiciendis fugit amet.</p>
+                </div>
+
+                <figure class="team-member">
+                    <img src="assets/images/img2.jfif" alt="">
+                    <figcaption>
+                        <h2 class="name">Team member</h2>
+                    </figcaption>
+                </figure>
+
+                <figure class="team-member">
+                    <img src="assets/images/img5.jfif" alt="">
+                    <figcaption>
+                        <h2 class="name">Team member</h2>
+                    </figcaption>
+                </figure>
+
+                <figure class="team-member">
+                    <img src="assets/images/img5.jfif" alt="">
+                    <figcaption>
+                        <h2 class="name">Team member</h2>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>-->
+    </body>
+</html>

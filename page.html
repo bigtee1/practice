@@ -1,12 +1,70 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<a href>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/page.css">
     <title>Document</title>
+    <script type="text/javascript">
+    /**function validate()
+    {   
+        var username = document.getElementById("uname").value;
+        var exam =/^[5-9]\d{8}$/;
+
+        if(exam.test(username))
+        {
+            alert("valid username");
+            return true;
+        }
+        else{
+            alert("invalid username");
+            document.getElementById("lbluser").style.visibility ="visible"; 
+            return false;
+        }
+    }**/
+    </script>  
+
 </head>
-<body>
-    <h1>Oh, I am the second page</h1>
-    <a href="index.html">click me</a>
+<body id="body"> 
+   /**<!-- <div class="menu">
+        <form action="" class="calculatorform" name="calculatorform">
+            <div class="screen">
+                <input type="text" name="screen" readonly/>
+            </div>
+            <div class="btn">
+                <input type="button" value="clear" name="clear" onclick="clear()"/>
+            </div>
+            <div class="btn">
+                <input type="button" value="1" name="num1" onclick="valuebutton(this)"/>
+                <input type="button" value="2" name="num2" onclick="valuebutton(this)"/>
+                <input type="button" value="3" name="num3" onclick="valuebutton(this)"/>
+                <input type="button" value="+" name="numplus" onclick="valuebutton(this)"/>
+            </div>
+            <div class="btn">
+                <input type="button" value="4" name="num1" onclick="valuebutton(this)">
+                <input type="button" value="5" name="num1" onclick="valuebutton(this)">
+                <input type="button" value="6" name="num1" onclick="valuebutton(this)">
+                <input type="button" value="-" name="num1" onclick="valuebutton(this)">
+            </div>
+        <div class="btn">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="*">
+        </div>
+        <div class="btn">
+            <input type="button" value="0">
+            <input type="button" value="/">
+            <input type ="button" value="=">
+        </div>
+        </form>
+    </div>
+   <form action="index.html">
+       <input type="text" placeholder="username" id="uname">
+       <label for="\" style="color:red; visibility:hidden;" id="lbluser">invalid</label>
+       <br  /><br  />
+        <button onclick="return validate()">submit</button>
+   </form>-->
 </body>
-</html>
+
+</html>   

@@ -1,8 +1,300 @@
-body{
-    background-image: url(assets/images/img2.jfif);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
 }
+html{
+    font-size: 6px;
+}
+body{
+    width: 100%;
+    position: relative;
+}
+header{
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: aqua;
+    padding: 1.5rem 2.5rem;
+}
+header .logo{
+    font-weight: bold;
+    font-size: 4rem;
+    font-style: italic;
+}
+#checkbtn{
+    display: none;
+}
+.check{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#checkbtn:checked ~ nav ul{
+    left: 0;
+    transition: all .2s ease-in;
+}
+nav ul{
+    display: block;
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    right: 0;
+    top: 7rem;
+    left: -100%;
+    padding: 5rem 2rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+nav ul li{
+    padding: 2rem 0rem;
+    border-bottom: 1px solid black;
+    margin: 0rem 3rem;
+}
+nav ul li a{
+    color: #000;
+}
+section{
+    position: static;
+    top: 6rem;
+}
+.top-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10rem 2.5rem;
+}
+.top-container__left{
+    margin-top: 4rem;
+}
+.top-container__left h1{
+    color:rgb(163, 67, 2);
+    font-weight: bold;
+    font-size: 4rem;
+}
+.top-container__left p{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.top-container-img{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(250, 172, 120);
+    margin-top: 3rem;
+}
+.top-container-img img{
+    width: 80%;
+    height: 70%;
+    margin: 4rem 0;
+}
+.cta-button{
+    margin: 2rem 0rem;
+}
+.primary-cta{
+    display: block;
+    background: rgb(163, 67, 2);
+    padding: 1rem 2rem;
+    margin: 0rem 10rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+}
+.secondary-cta{
+    display: block;
+    background: rgb(250, 172, 120);
+    padding: 1rem 2rem;
+    margin: 0rem 10rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 5rem;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 170vh;
+    padding: 10rem 2.5rem;
+    background-color: rgb(163, 67, 2);
+}
+.bottom-container .bottom-container__left{
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10rem;
+}
+.bottom-container .bottom-container__left h1{
+    font-size: 4rem;
+}
+.bottom-container .bottom-container__left p{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.bottom-container .bottom-container__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-container .bottom-container__right figure{
+    width: 50%;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+.bottom-container .bottom-container__right figure:hover{
+    background-color: rgb(250, 172, 120);
+    color: rgb(163, 67, 2);
+    border-radius: 5rem;
+    transition: all .2s ease-in-out;
+}
+.bottom-container .bottom-container__right figure img{
+    width: 50%;
+}
+.bottom-container .bottom-container__right figure figcaption{
+    padding-top: 5rem;
+}
+.bottom-container .bottom-container__right figure figcaption a{
+    font-size: 2rem;
+    color: #fff;
+}
+.bottom-container .bottom-container__right figure figcaption a:hover{
+    color: rgb(163, 67, 2);;
+}
+.bottom-container .bottom-container__right figure figcaption a:hover p{
+    color: #000;
+    font-size: 3rem;
+}
+.bottom-container .bottom-container__right figure figcaption p{
+    font-weight: bold;
+}
+@media (min-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+    header .logo{
+        font-size: 2rem;
 
-.grid-container{
-    background-image: url(assets/images/img2.jfif);
-    height: 90vh;
+    }
+    .check{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: none;
+        font-size: 1.5rem;
+        background: inherit;
+        text-align: center;
+        top: 0;
+        left: 20rem;
+        padding: 1rem 2rem;
+        width: 80%;
+    }
+    nav ul li{
+        padding: 1rem 0rem;
+        font-weight: bold;
+        border-bottom: 0;
+    }
+    nav ul li a{
+        color: #000;
+    }
+    section{
+        position: static;
+        top: 6rem;
+        z-index: 0;
+        border: rem solid green;
+    }
+    .top-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        
+        text-align: left;
+        width: 100%;
+        height: 100vh;
+    }
+    .top-container__left{
+        flex: 1 1 150rem;
+        margin-top: 5rem;
+        margin-right: 6rem;
+        border: 2px solid black;
+    }
+    .top-container__left h1{
+        font-size: 3rem;
+    }
+    .top-container__left p{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .cta-button{
+        margin: 3rem 0;
+    }
+    .primary-cta{
+        display: inline-block;
+        background: brown;
+        padding: 1rem 4rem;
+        margin: 1rem 0rem;
+        margin-right: 2rem;
+        border-radius: 50px;
+        color: white;
+    }
+    .secondary-cta{
+        display: inline-block;
+        background: rgb(250, 172, 120);
+        padding: 1rem 4rem;
+        margin: 0rem 0rem;
+        border-radius: 50px;
+        color: #000;
+    }
+    .top-container-img{
+        flex: 1 1 150rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        margin-top: 31rem;
+    }
+    .bottom-container{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .bottom-container .bottom-container__left{
+        flex-direction: 1 1 100rem;
+    }
+    .bottom-container .bottom-container__left p{
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    .bottom-container .bottom-container__right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 300rem;
+        margin-top: 20rem;
+    }
+    .bottom-container .bottom-container__right figure{
+        margin-bottom: 0rem;
+    }
+    .bottom-container .bottom-container__right figure figcaption a{
+        font-size: 1.2rem;
+        color: #fff;
+    }
 }
